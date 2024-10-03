@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(270, 96%, 10%);
+}
+
+.page {
+    max-width: 600px;
+    width: 90%;
+    background: #8f07f1;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(249, 248, 250, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #040001;
+    font-size: 28px;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #00d9fa;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #004d40;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: hsl(270, 96%, 10%);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1dd9ee;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#tasks-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#tasks {
+    text-align: left;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+#thank-you-page {
+    background-color: #d07fff;
+    color: #004d40;
+}
+
+#log-page {
+    max-width: 800px;
+}
+
+#log-entries {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#log-entries div {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}

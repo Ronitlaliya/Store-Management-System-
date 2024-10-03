@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convenience Store Checklist</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Staff Login Page -->
+    <div id="login-page" class="page">
+        <h1>Welcome Staff!</h1>
+        <h2>Hope you all had a good day</h2>
+        <input type="text" id="full-name" placeholder="Full Name">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <div>
+            <label>
+                <input type="radio" name="staff-type" value="closing" checked> Closing Staff
+            </label>
+            <label>
+                <input type="radio" name="staff-type" value="opening"> Opening Staff
+            </label>
+        </div>
+        <button onclick="login()">Login</button>
+        <div id="login-error" class="error-message"></div>
+        <button onclick="showLogLogin()">View Log</button>
+    </div>
+
+    <!-- Log Viewer Login Page -->
+    <div id="log-login-page" class="page hidden">
+        <h1>Log Viewer Login</h1>
+        <input type="text" id="log-username" placeholder="Username">
+        <input type="password" id="log-password" placeholder="Password">
+        <button onclick="logLogin()">Login</button>
+        <div id="log-login-error" class="error-message"></div>
+    </div>
+
+    <!-- Checklist Page (hidden initially) -->
+    <div id="checklist-page" class="page hidden">
+        <h2>Checklist</h2>
+        <div id="tasks-container">
+            <div id="tasks">
+                <!-- Tasks will be dynamically added here -->
+            </div>
+        </div>
+        <button id="submit-button" class="hidden" onclick="submitChecklist()">Submit Checklist</button>
+    </div>
+
+    <!-- Thank You Page (hidden initially) -->
+    <div id="thank-you-page" class="page hidden">
+        <h1>Thank you for your support!</h1>
+        <h2 class="thank-you-message"></h2>
+    </div>
+
+    <!-- Log Page (hidden initially) -->
+    <div id="log-page" class="page hidden">
+        <h2>Log Entries</h2>
+        <div id="log-entries">
+            <!-- Log entries will be dynamically added here -->
+        </div>
+        <button onclick="goBackToLogin()">Back to Login</button>
+        <button onclick="clearLogs()">Clear Logs</button>
+
+    </div>
+   
+
+
+    <script src="script.js"></script>
+</body>
+</html>
